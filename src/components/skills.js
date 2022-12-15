@@ -30,29 +30,37 @@ export const Skills = () => {
       return (
         <section className="skill" id="skills">
             <Container>
-                <Row>
+                <Row className="justify-content-md-center">
                     <Col>
                         <div className="skill-box">
                             <h2>
                                 Skills
                             </h2>
-                            <p>Ad excepteur eiusmod do eu est sit dolor cillum proident exercitation voluptate. Est magna incididunt reprehenderit do officia reprehenderit commodo dolore dolore qui adipisicing pariatur. Sit amet nostrud consectetur commodo. Velit tempor officia velit occaecat deserunt sunt adipisicing quis adipisicing deserunt nulla. Pariatur ea in ad ipsum pariatur nisi duis. Culpa tempor ea aliquip mollit id deserunt dolore proident qui consectetur commodo ex culpa.</p>
+                            <p>Hier mal eine kleine Auflistung meiner "Skills" die ich in den vergangen Jahren angehäuft habe. Die Prozentzahl bezieht sich darauf, wie viel ich tatsächlich von dem gelernten auch verstanden habe xd</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter2} alt="Image"/>
-                                    <h5>Brand Identity</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter3} alt="Image"/>
-                                    <h5>Logo Design</h5>
+                                    <h5>React Development</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Image"/>
-                                    <h5>Web Development</h5>
+                                    <h5>UI/UX Design</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image"/>
+                                    <h5>Python</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter3} alt="Image"/>
+                                    <h5>C/C++</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image"/>
+                                    <h5>Assembler</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image"/>
+                                    <h5>Java</h5>
                                 </div>
                             </Carousel>
                         </div>

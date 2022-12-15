@@ -45,6 +45,8 @@ export const Contact = () => {
     return(
         <section className="contact" id="connect">
             <Container>
+                <div className="skill-box">
+
                 <Row className="allign-items-center">
                     <Col md={6}>
                         <img src={contactImg} alt="Kontaktier' mich!"/>
@@ -65,7 +67,7 @@ export const Contact = () => {
                                     <input type="email" value={formDetails.email} placeholder="E-Mail" onChange={(e) => onFormUpdate("email", e.target.value)} />
                                 </Col>
 
-                                <Col>
+                                <Col sm={6} className="px-1">
                                     <textarea row="6" value={formDetails.message} placeholder="Nachricht" onChange={(e) => onFormUpdate("message", e.target.value)} />
                                     <button type="submit"><span>{buttonText}</span></button>
                                 </Col>
@@ -79,6 +81,7 @@ export const Contact = () => {
                         </form>
                     </Col>
                 </Row>
+                </div>
             </Container>
         </section>
     )

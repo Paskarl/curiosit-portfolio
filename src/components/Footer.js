@@ -9,11 +9,7 @@ export const Footer = () => {
         <footer className="footer">
             <Container>
                 <Row className="align-item-center">
-                    <Col sm={4}>
-                        <img src={footerIcon} alt="Logo" />
-                    </Col>
-
-                    <Col sm={8} className="text-center">
+                    <Col className="text-center">
                         <div className="social-icon">
                             <a href=""><img src={navIcon1}/></a>
                             <a href=""><img src={navIcon2}/></a>

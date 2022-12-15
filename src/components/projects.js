@@ -9,7 +9,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const UIprojects = [
     {
       title: "Business Startup",
       description: "Design & Development",
@@ -23,23 +23,9 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
       imgUrl: projImg2,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+  
   ];
 
   return (
@@ -47,28 +33,30 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
+            <div className="skill-box">
+
             <TrackVisibility>
               {({ isVisible }) =>
               <div >
-                <h2 className={isVisible ? "animate__animated animate__tada": ""}>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2 className={isVisible ? "animate__animated animate__tada": ""}>Meine Projekte</h2>
+                <p>Bei folgenden Projekten hatte ich entweder meine Finger mit im Spiel oder habe diese alleine umgesetzt:</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">UI/UX Kram</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Backend</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Hardware</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__tada" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          UIprojects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -79,16 +67,17 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                        <p>Hier kommen in Zukunft die Projekte hin die ich im Backend umgesetzt habe :)</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Hier kommen in Zukunft die Projekte hin die ich Hardwaretechnisch umgesetzt habe :)</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>}
             </TrackVisibility>
+            </div>
           </Col>
         </Row>
       </Container>
