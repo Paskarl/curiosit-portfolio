@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/footer-icon.png"
+import headerImg from "../assets/img/ballon.svg"
 import { useState, useEffect } from "react"
 import "animate.css"
 import TrackVisibility from "react-on-screen"

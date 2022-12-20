@@ -54,9 +54,12 @@ export const NavBar = () => {
                     <a href="https://www.instagram.com/javabinks/"><img src={navIcon3} alt=""/></a>
 
                 </div>
-                <button className="contactMe" onClick={() => console.log("connect")}>
-                    <span>Let's Connect!</span>
-                </button>
+                <Nav.Link href="#connect"className={activeLink=== 'connect' ? 'active navbar-link' : 'navbar-link'}onClick={() => onUpdateActiveLink('connect')}>
+
+                    <button className="contactMe" href="#connect" onClick={() => onUpdateActiveLink('connect')}>
+                        <span>Let's Connect!</span>
+                    </button>
+                </Nav.Link>
             </span>
         </Navbar.Collapse>
         </Container>

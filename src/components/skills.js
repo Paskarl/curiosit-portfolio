@@ -36,18 +36,18 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Hier mal eine kleine Auflistung meiner "Skills" die ich in den vergangen Jahren angehäuft habe. Die Prozentzahl bezieht sich darauf, wie viel ich tatsächlich von dem gelernten auch verstanden habe xd</p>
+                            <p>Hier mal eine kleine Auflistung meiner "Skills" die ich in den vergangen Jahren angehäuft habe.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image"/>
+                                    <img src={meter2} alt="Image"/>
                                     <h5>React Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image"/>
+                                    <img src={meter2} alt="Image"/>
                                     <h5>UI/UX Design</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image"/>
+                                    <img src={meter1} alt="Image"/>
                                     <h5>Python</h5>
                                 </div>
                                 <div className="item">
@@ -55,7 +55,7 @@ export const Skills = () => {
                                     <h5>C/C++</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image"/>
+                                    <img src={meter2} alt="Image"/>
                                     <h5>Assembler</h5>
                                 </div>
                                 <div className="item">
